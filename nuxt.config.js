@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Tajam\'s Space',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,7 +41,28 @@ export default {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    // Refer: https://fontawesome.com/icons?d=gallery&m=free
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        // Regular icons
+        {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: ['far']
+        },
+        // Solid icons
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+        // Brand icons
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        }
+      ]
+    }]
   ],
   /*
   ** Build configuration
