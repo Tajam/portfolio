@@ -1,31 +1,29 @@
 <template>
   <div>
-    <b-row align-h="center">
-      <b-col cols="3">
-        <b-img class="thumbnail" center fluid :src="picture.url" :alt="picture.name" />
+    <b-row>
+      <b-col cols="12" md="4">
+        <avatar />
       </b-col>
-      <b-col cols="9" />
+      <b-col cols="12" md="8" class="px-5 py-3">
+        <about-panel />
+      </b-col>
+      <b-col cols="12" md="4">
+        <project-panel />
+      </b-col>
     </b-row>
   </div>
 </template>
 
 <script>
+import Avatar from '~/components/avatar'
+import AboutPanel from '~/components/about-panel'
+import ProjectPanel from '~/components/project-panel'
+
 export default {
-  data: () => {
-    return {
-      picture: {
-        url: 'profile-picture.jpg',
-        name: 'Profile Image'
-      }
-    }
+  components: {
+    Avatar,
+    AboutPanel,
+    ProjectPanel
   }
 }
 </script>
-
-<style scoped>
-  .thumbnail {
-    padding: .5em;
-    background-color: rgba(255, 255, 255, .75);
-    border-radius: .25em;
-  }
-</style>
