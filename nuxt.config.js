@@ -1,3 +1,10 @@
+/* nuxt.config.js */
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository-name>/'
+  }
+} : {}
 
 export default {
   mode: 'spa',
@@ -77,5 +84,6 @@ export default {
   server: {
     port: 22222, // default: 3000
     host: '0.0.0.0' // default: localhost
-  }
+  },
+  routerBase
 }
