@@ -48,11 +48,6 @@ export default {
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [
-        // Regular icons
-        {
-          set: '@fortawesome/free-regular-svg-icons',
-          icons: ['far']
-        },
         // Solid icons
         {
           set: '@fortawesome/free-solid-svg-icons',

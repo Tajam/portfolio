@@ -1,11 +1,12 @@
 <template>
   <div class="mt-4">
     <div class="mx-4 header">
-      {{ title }}
+      Notable Projects
     </div>
     <hr>
     <div v-for="key in featured" :key="`card-${key}`" class="mb-2">
       <project-card
+        :url="key"
         :name="projects[key].name"
         :thumbnail="projects[key].thumbnail"
         :tags="projects[key].tags"
@@ -24,7 +25,6 @@ export default {
   },
   data: () => {
     return {
-      title: 'Notable Projects',
       projects,
       featured
     }

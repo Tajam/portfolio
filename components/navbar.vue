@@ -5,7 +5,7 @@
         <fa :icon="faBars" />
       </b-button>
     </div>
-    <div class="my-5 py-1 d-md-none" />
+    <div class="top-padding d-md-none" />
     <b-modal id="menu-modal" ref="menu-modal" content-class="modal-bg" :hide-footer="true" :hide-header="true">
       <p v-for="(value, key) in items" :key="value.key" class="nav-text m-0 p-0">
         <nuxt-link
@@ -79,15 +79,10 @@ export default {
           status: true,
           url: '/'
         },
-        Project: {
-          key: 'navbar-project-button',
+        Projects: {
+          key: 'navbar-projects-button',
           status: false,
-          url: '/project'
-        },
-        Hackathon: {
-          key: 'navbar-hackathon-button',
-          status: false,
-          url: '/hackathon'
+          url: '/projects'
         }
       },
       links: {
@@ -104,7 +99,7 @@ export default {
         Resume: {
           icon: faFileAlt,
           key: 'navbar-resume-link',
-          url: '#'
+          url: 'Resume.pdf'
         }
       },
       linkDesc: '-',
@@ -129,6 +124,9 @@ export default {
 </script>
 
 <style scoped>
+  .top-padding {
+    height: 5.5rem;
+  }
   .nav-text {
     padding: 0.25rem 0;
     font-family: 'Staatliches', cursive;

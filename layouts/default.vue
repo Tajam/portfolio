@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-2 mb-md-0">
     <navbar />
     <b-container>
       <nuxt />
@@ -20,17 +20,18 @@ export default {
 <style>
   body {
     font-family: 'Lato', sans-serif;
-    height: 100vh;
-    background: rgb(0,255,170);
-    background: -moz-linear-gradient(145deg, rgba(0,255,170,1) 0%, rgba(0,255,195,1) 50%, rgba(0,255,242,1) 100%);
-    background: -webkit-linear-gradient(145deg, rgba(0,255,170,1) 0%, rgba(0,255,195,1) 50%, rgba(0,255,242,1) 100%);
-    background: linear-gradient(145deg, rgba(0,255,170,1) 0%, rgba(0,255,195,1) 50%, rgba(0,255,242,1) 100%);
+    background: rgb(0, 189, 145);
+    background: -moz-linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
+    background: -webkit-linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
+    background: linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .modal-bg {
-    background-image: rgb(0,255,170);
-    background-image: -moz-linear-gradient(145deg, rgba(0,255,170,1) 0%, rgba(0,255,195,1) 50%, rgba(0,255,242,1) 100%);
-    background-image: -webkit-linear-gradient(145deg, rgba(0,255,170,1) 0%, rgba(0,255,195,1) 50%, rgba(0,255,242,1) 100%);
-    background-image: linear-gradient(145deg, rgba(0,255,170,1) 0%, rgba(0,255,195,1) 50%, rgba(0,255,242,1) 100%);
+    background-image: rgb(0, 189, 145);
+    background-image: -moz-linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
+    background-image: -webkit-linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
+    background-image: linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
   }

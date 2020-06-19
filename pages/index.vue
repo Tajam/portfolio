@@ -2,13 +2,14 @@
   <div>
     <b-row>
       <b-col cols="12" md="4">
-        <avatar />
+        <avatar class="mb-3 mb-md-0" />
+        <project-panel class="d-none d-md-block" />
       </b-col>
-      <b-col cols="12" md="8" class="px-5 py-3">
+      <b-col cols="12" md="8" class="px-md-5 py-md-3">
         <about-panel />
       </b-col>
-      <b-col cols="12" md="4">
-        <project-panel />
+      <b-col cols="12">
+        <project-panel class="d-md-none" />
       </b-col>
     </b-row>
   </div>
