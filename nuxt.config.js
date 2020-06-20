@@ -1,5 +1,3 @@
-import { base } from './path.config.js'
-
 export default {
   mode: 'spa',
   /*
@@ -88,6 +86,6 @@ export default {
     }
   },
   router: {
-    base
+    base: process.env.DEPLOY_PATH
   }
 }

@@ -2,7 +2,7 @@
   <a :href="`project/${url}`">
     <b-card
       :title="name"
-      :img-src="`${base}projects/${url}/thumbnail.jpg`"
+      :img-src="`${process.env.DEPLOY_PATH}projects/${url}/thumbnail.jpg`"
       :img-alt="name"
       img-height="100%"
       :img-width="width"
@@ -29,8 +29,6 @@
 </template>
 
 <script>
-import { base } from '~/path.config.js'
-
 export default {
   props: {
     name: {
