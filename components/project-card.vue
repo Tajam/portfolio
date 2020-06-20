@@ -2,7 +2,7 @@
   <a :href="`project/${url}`">
     <b-card
       :title="name"
-      :img-src="`${process.env.DEPLOY_PATH}projects/${url}/thumbnail.jpg`"
+      :img-src="`${base}projects/${url}/thumbnail.jpg`"
       :img-alt="name"
       img-height="100%"
       :img-width="width"
@@ -64,7 +64,7 @@ export default {
   },
   data: () => {
     return {
-      base
+      base: process.env.base
     }
   }
 }

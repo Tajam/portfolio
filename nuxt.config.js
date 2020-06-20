@@ -86,6 +86,9 @@ export default {
     }
   },
   router: {
-    base: process.env.DEPLOY_PATH
+    base: process.env.DEPLOY_PATH || '/'
+  },
+  env: {
+    base: process.env.DEPLOY_PATH || '/'
   }
 }
