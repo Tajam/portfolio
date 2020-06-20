@@ -81,6 +81,14 @@ export default {
     port: 22222, // default: 3000
     host: '0.0.0.0' // default: localhost
   },
+  /**
+   * Render configuration
+   */
+  render: {
+    static: {
+      prefix: true
+    }
+  },
   router: {
     base
   }
