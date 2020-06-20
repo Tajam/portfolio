@@ -5,7 +5,7 @@
   "author": "TajamHeng",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --spa",
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build --spa",
     "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "build": "nuxt build --spa",
