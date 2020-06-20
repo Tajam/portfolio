@@ -1,5 +1,5 @@
 <template>
-  <a :href="`project/${url}`">
+  <a :href="`${base}project/${url}`">
     <b-card
       :title="name"
       :img-src="`${base}projects/${url}/thumbnail.jpg`"
