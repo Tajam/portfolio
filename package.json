@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt --spa",
-    "build": "./gitspa.sh",
+    "build": "node build.js",
     "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build --spa",
     "start": "nuxt start",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",

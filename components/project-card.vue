@@ -2,7 +2,7 @@
   <a :href="`project/${url}`">
     <b-card
       :title="name"
-      :img-src="`../projects/${url}/thumbnail.jpg`"
+      :img-src="`${base}projects/${url}/thumbnail.jpg`"
       :img-alt="name"
       img-height="100%"
       :img-width="width"
@@ -29,6 +29,8 @@
 </template>
 
 <script>
+import { base } from '~/path.config.js'
+
 export default {
   props: {
     name: {
@@ -60,6 +62,11 @@ export default {
       type: Number,
       required: false,
       default: 80
+    }
+  },
+  data: () => {
+    return {
+      base
     }
   }
 }
