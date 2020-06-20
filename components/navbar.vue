@@ -7,22 +7,36 @@
     </div>
     <div class="top-padding d-md-none" />
     <b-modal id="menu-modal" ref="menu-modal" content-class="modal-bg" :hide-footer="true" :hide-header="true">
-      <p v-for="(value, key) in items" :key="value.key" class="nav-text m-0 p-0">
-        <nuxt-link
-          :to="value.url"
-          class="nav-text"
-          :class="{active: value.status}"
-          variant="light"
-          @click.native="highlight(key);hideModal()"
-        >
-          <div>
+      <b-list-group flush>
+        <b-list-group-item v-for="(value, key) in items" :key="`navbar-${key}`" class="m-0 p-0">
+          <nuxt-link
+            :to="value.url"
+            class="nav-text small"
+            :class="{active: value.status}"
+            variant="light"
+            @click.native="highlight(key);hideModal()"
+          >
+            <div>
+              {{ key }}
+            </div>
+          </nuxt-link>
+        </b-list-group-item>
+        <b-list-group-item v-for="(value, key) in links" :key="`navbar-${key}`" class="m-0 p-0">
+          <a
+            class="nav-text small"
+            target="_blank"
+            :href="value.url"
+            @mouseenter="linkDescUpdate(key)"
+            @mouseleave="linkShow=false"
+          >
             {{ key }}
-          </div>
-        </nuxt-link>
-      </p>
+            <fa :icon="value.icon" />
+          </a>
+        </b-list-group-item>
+      </b-list-group>
     </b-modal>
-    <b-container>
-      <b-row class="p-0 m-0 d-none d-md-flex mt-5">
+    <b-container class="d-none d-md-block">
+      <b-row class="p-0 m-0 mt-5">
         <b-col cols="9" class="p-0 m-0">
           <b-button-toolbar class="text-center">
             <b-button-group v-for="(value, key) in items" :key="value.key">
@@ -75,12 +89,10 @@ export default {
       faBars,
       items: {
         About: {
-          key: 'navbar-about-button',
           status: true,
           url: '/'
         },
         Projects: {
-          key: 'navbar-projects-button',
           status: false,
           url: '/projects'
         }
@@ -88,17 +100,14 @@ export default {
       links: {
         Github: {
           icon: faGithub,
-          key: 'navbar-github-link',
           url: 'https://github.com/Tajam'
         },
         LinkedIn: {
           icon: faLinkedin,
-          key: 'navbar-linkedin-link',
           url: 'https://www.linkedin.com/in/tajamheng'
         },
         Resume: {
           icon: faFileAlt,
-          key: 'navbar-resume-link',
           url: 'Resume.pdf'
         }
       },
@@ -134,6 +143,10 @@ export default {
     color: rgba(255, 255, 255, .8);
     transition-duration: 250ms;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  }
+  .nav-text.small {
+    padding: 0;
+    font-size: 1.5rem;
   }
   .nav-text .underline {
     width: 0;
@@ -180,6 +193,11 @@ export default {
   .menu-bar {
     background-color: rgba(0, 0, 0, .15);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  }
+  .list-group-item {
+    text-align: right;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
   }
   .btn {
     padding: 0;

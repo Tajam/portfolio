@@ -3,7 +3,7 @@
     <b-row>
       <b-col>
         <h1 class="plain-text">
-          Hi, I am Jin Heng!
+          <b>Hi, I am Jin Heng!</b>
         </h1>
         <h5 class="plain-text">
           Create games, apps, webs and some Spigot plugins.
@@ -16,12 +16,12 @@
       </b-col>
     </b-row>
     <b-row class="mt-4 mt-md-5">
-      <b-col cols="12" md="4">
-        <a href="Resume.pdf" target="_blank" class="plain-text resume p-3 d-block">
-          <fa class="d-inline mr-1" :icon="faFileAlt" />
-          <span>
-            Get Resume
-          </span>
+      <b-col cols="12">
+        <a href="Resume.pdf" target="_blank" class="plain-text text-center text-md-left d-block">
+          <h5 class="d-inline">
+            Get my resume here!
+          </h5>
+          <fa class="d-inline ml-1" :icon="faFileAlt" />
         </a>
       </b-col>
     </b-row>
@@ -66,19 +66,9 @@ export default {
 
 <style scoped>
   .plain-text {
-    font-weight: bold;
+    font-weight: normal;
     color: rgba(255, 255, 255, .925);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
-  }
-  .resume {
-    font-size: 1rem;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
-    transition-duration: 250ms;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .resume:hover {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
   }
   @media only screen and (max-width:992px) {
     h1 {

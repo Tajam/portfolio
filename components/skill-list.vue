@@ -7,7 +7,7 @@
       <b-list-group-item
         v-for="item in items"
         :key="`skill-${title}-${item}`"
-        class="py-0 px-1 py-md-1 px-md-3"
+        class="py-0 px-1 px-md-3"
       >
         {{ item }}
       </b-list-group-item>
@@ -40,7 +40,7 @@ export default {
   }
   .list-group-item {
     font-size: 1.1rem;
-    font-weight: bolder;
+    font-weight: normal;
     color: rgba(255, 255, 255, .925);
     background-color: rgba(0, 0, 0, 0);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);

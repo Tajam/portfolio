@@ -49,7 +49,7 @@ export default {
 }
 ```
 
-```json
+```js
 /* package.json */
 
 // Add the following scripts

@@ -8,8 +8,9 @@
       <b-col cols="12" md="8" class="px-md-5 py-md-3">
         <about-panel />
       </b-col>
-      <b-col cols="12">
-        <project-panel class="d-md-none" />
+      <b-col cols="12" class="d-md-none">
+        <hr>
+        <project-panel />
       </b-col>
     </b-row>
   </div>

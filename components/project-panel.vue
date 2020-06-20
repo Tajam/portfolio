@@ -8,7 +8,6 @@
       <project-card
         :url="key"
         :name="projects[key].name"
-        :thumbnail="projects[key].thumbnail"
         :tags="projects[key].tags"
       />
     </div>

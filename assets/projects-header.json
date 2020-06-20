@@ -1,51 +1,49 @@
 {
   "featured": [
-    "project-title-1",
-    "project-title-2"
+    "bubble-tower",
+    "spacebeat",
+    "ar-3d-cube",
+    "jext-project"
   ],
   "projects": {
-    "project-title-1": {
-      "thumbnail": "image-placeholder.jpg",
-      "name": "Project Title #1",
-      "desc": "This is the description for project #1",
+    "bubble-tower": {
+      "name": "Bubble Tower",
+      "desc": "A VR breathing game played with a custom built console that can detect human breath.",
       "tags": [
-        "Tag #1", "Tag #2", "Tag #3"
+        "VR", "Game", "Custom Console"
       ],
       "stacks": [
-        "C++", "Java"
+        "Unity", "C", "Arduino"
       ]
     },
-    "project-title-2": {
-      "thumbnail": "image-placeholder.jpg",
-      "name": "Project Title #2",
-      "desc": "This is the description for project #2",
+    "spacebeat": {
+      "name": "Spacebeat",
+      "desc": "A VR rhythm game where players can control the input by just moving their head.",
       "tags": [
-        "Tag #1", "Tag #2"
+        "VR", "Mobile Game"
       ],
       "stacks": [
-        "Node.js", "Python"
+        "Unity", "Google VR SDK"
       ]
     },
-    "project-title-3": {
-      "thumbnail": "image-placeholder.jpg",
-      "name": "Project Title #3",
-      "desc": "This is the description for project #3",
+    "ar-3d-cube": {
+      "name": "AR-3D-Cube",
+      "desc": "A 3D AR mobile 3-matches puzzle game.",
       "tags": [
-        "Tag #1", "Important"
+        "AR", "Mobile Game"
       ],
       "stacks": [
-        "Golang", "Elixir"
+        "Unity", "Google ARCore"
       ]
     },
-    "project-title-4": {
-      "thumbnail": "image-placeholder.jpg",
-      "name": "Project Title #4",
-      "desc": "This is the description for project #4",
+    "jext-project": {
+      "name": "Jukebox Extended",
+      "desc": "A Spigot plugin that allows players to play custom music using jukebox and discs in Minecraft.",
       "tags": [
-        "Tag Special", "Tag #2"
+        "Minecraft", "Spigot", "OOP"
       ],
       "stacks": [
-        "Visual Basic", "C"
+        "Java", "Maven"
       ]
     }
   }

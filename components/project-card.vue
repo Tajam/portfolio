@@ -2,7 +2,7 @@
   <a :href="`project/${url}`">
     <b-card
       :title="name"
-      :img-src="thumbnail"
+      :img-src="`/projects/${url}/thumbnail.jpg`"
       :img-alt="name"
       img-height="100%"
       :img-width="width"
@@ -31,11 +31,6 @@
 <script>
 export default {
   props: {
-    thumbnail: {
-      type: String,
-      required: true,
-      default: 'image-placeholder.jpg'
-    },
     name: {
       type: String,
       required: true,

@@ -19,7 +19,6 @@
         <project-card
           :url="key"
           :name="value.name"
-          :thumbnail="value.thumbnail"
           :desc="value.desc"
           :tags="value.tags"
           :stacks="value.stacks"

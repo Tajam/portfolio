@@ -28,6 +28,7 @@ export default {
     background-attachment: fixed;
   }
   .modal-bg {
+    opacity: .925;
     background-image: rgb(0, 189, 145);
     background-image: -moz-linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
     background-image: -webkit-linear-gradient(145deg, rgb(0, 190, 127) 0%, rgb(0, 189, 145) 50%, rgb(0, 184, 174) 100%);
