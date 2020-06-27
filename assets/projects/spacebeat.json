@@ -1,6 +1,6 @@
 {
   "data": [
-    [{ "type": "text", "option": { "content": "Sample text over here!" } }, { "type": "text", "option": { "content": "Sample text over here!" } }],
-    [{ "type": "text", "option": { "content": "Sample text over here!" } }]
+    { "type": "head", "option": { "title": "Demo video" } },
+    { "type":"embed", "option": { "url": "https://www.youtube.com/embed/yvNSYhMm634" } }
   ]
 }

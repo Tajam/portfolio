@@ -2,10 +2,7 @@
   <div>
     <b-row class="d-md-none">
       <b-col>
-        <div class="mx-4 header">
-          Projects
-        </div>
-        <hr>
+        <p-head title="Projects" />
       </b-col>
     </b-row>
     <b-row align-h="center">
@@ -16,14 +13,7 @@
         md="10"
         class="mb-2 mb-md-4"
       >
-        <project-card
-          :url="key"
-          :name="value.name"
-          :desc="value.desc"
-          :tags="value.tags"
-          :stacks="value.stacks"
-          :width="180"
-        />
+        <p-card :id="key" :detailed="true" />
       </b-col>
     </b-row>
   </div>
@@ -31,11 +21,13 @@
 
 <script>
 import { projects } from '~/assets/projects-header.json'
-import ProjectCard from '~/components/project-card'
+import PCard from '~/components/p-card'
+import PHead from '~/components/p-head'
 
 export default {
   components: {
-    ProjectCard
+    PCard,
+    PHead
   },
   data: () => {
     return {
@@ -44,12 +36,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  .header {
-      color: rgba(255, 255, 255, .9);
-      font-family: 'Staatliches', cursive;
-      font-size: 2rem;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
-    }
-</style>

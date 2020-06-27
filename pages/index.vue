@@ -18,8 +18,8 @@
 
 <script>
 import Avatar from '~/components/avatar'
-import AboutPanel from '~/components/about-panel'
-import ProjectPanel from '~/components/project-panel'
+import AboutPanel from '~/components/index/about-panel'
+import ProjectPanel from '~/components/index/project-panel'
 
 export default {
   components: {

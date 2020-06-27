@@ -42,7 +42,7 @@
             <b-button-group v-for="(value, key) in items" :key="value.key">
               <nuxt-link
                 :to="value.url"
-                class="mx-4 nav-text"
+                class="mr-5 nav-text"
                 :class="{active: value.status}"
                 variant="light"
                 @click.native="highlight(key)"
