@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{212:function(o){o.exports=JSON.parse('{"data":[{"type":"head","option":{"title":"Demo video"}},{"type":"link","option":{"url":"https://www.youtube.com/watch?v=JT7iQn5R4l0","text":"Click here for demo video"}}]}')}}]);
