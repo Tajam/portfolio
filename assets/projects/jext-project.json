@@ -1,6 +1,9 @@
 {
   "data": [
     { "type": "head", "option": { "title": "Demo video" } },
-    { "type":"embed", "option": { "url": "https://www.youtube.com/embed/hrwXPI8FlPU" } }
+    { "type": "link", "option": { "url": "https://www.youtube.com/watch?v=hrwXPI8FlPU", "text": "Click here for demo video" } },
+    { "type": "head", "option": { "title": "Resource page" } },
+    { "type": "text", "option": { "text": "Spigot plugins are usually posted on Spigot plugin resource page to post updates and for users to download. Click on the link below to visit the resource page of this plugin." } },
+    { "type": "link", "option": { "url": "https://www.spigotmc.org/resources/76963/", "text": "Resource page of the plugin" } }
   ]
 }

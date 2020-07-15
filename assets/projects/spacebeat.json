@@ -1,6 +1,6 @@
 {
   "data": [
     { "type": "head", "option": { "title": "Demo video" } },
-    { "type":"embed", "option": { "url": "https://www.youtube.com/embed/yvNSYhMm634" } }
+    { "type": "link", "option": { "url": "https://www.youtube.com/watch?v=yvNSYhMm634", "text": "Click here for demo video" } }
   ]
 }

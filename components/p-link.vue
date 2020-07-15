@@ -1,5 +1,5 @@
 <template>
-  <a :href="m_url || url" target="_blank" class="d-block w-100 center">
+  <a :href="m_url || url" target="_blank" class="d-block w-100 center my-3">
     <fa class="d-inline mr-2" :icon="faLink" />
     <h5 class="d-inline">
       {{ m_text || text }}
